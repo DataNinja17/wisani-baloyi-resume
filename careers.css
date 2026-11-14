@@ -34,3 +34,7 @@
 .career-detail li { margin: .5em 0; }
 @media (max-width: 850px) { .app__skills-container { flex-direction: column; } .app__skills-exp.career-timeline { margin-top: 0; } }
 @media (prefers-reduced-motion: reduce) { .career-link .career-arrow { transition: none; } }
+@media(prefers-reduced-motion:no-preference){
+  details[open] > :not(summary){animation:experience-expand .3s cubic-bezier(.22,1,.36,1) both}
+  @keyframes experience-expand{from{opacity:0;transform:translateY(-5px)}}
+}

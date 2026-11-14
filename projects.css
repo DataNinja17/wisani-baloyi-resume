@@ -88,3 +88,28 @@
 .case-page h2 { font-size: 1.35rem; line-height: 1.25; margin: 2rem 0 .55rem; }
 .case-page p { margin-top: 0; }
 .case-page footer { border-top: 1px solid #c9dce2; padding: 1.5rem 0; }
+.case-page main > figure,.case-page .gallery { width:82%;margin:2.75rem auto;text-align:center }
+.case-page figure img { display:block;width:100%;height:auto;max-height:none;object-fit:contain }
+.case-page figcaption {text-align:center;margin:.9rem auto}
+.gallery h2{margin:0 0 1.25rem}
+.gallery .slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border-radius:.8rem;align-items:flex-start}
+.gallery .slides::-webkit-scrollbar{display:none}
+.gallery .slides figure{flex:0 0 100%;min-width:0;scroll-snap-align:center;margin:0}
+.gallery .slides img{width:100%;height:clamp(12rem,31vw,29rem);object-fit:contain}
+.gallery-controls{display:flex;justify-content:center;align-items:center;gap:1rem}
+.gallery-controls button{border:1px solid #acbcc3;border-radius:50%;width:44px;height:44px;background:white;color:#173d50;font-size:1.25rem;cursor:pointer;transition:transform .2s ease,background .2s}
+.gallery-controls button:not(:disabled):hover{transform:translateY(-2px);background:#e9f3f7}
+.gallery-controls button:disabled{opacity:.35;cursor:default}
+.gallery-controls output{font-variant-numeric:tabular-nums}
+#work .app__work-hover{align-items:center;justify-content:center}
+@media(max-width:700px){.case-page main > figure,.case-page .gallery{width:100%}}
+@media(prefers-reduced-motion:no-preference){
+ @view-transition{navigation:auto}
+ ::view-transition-old(root){animation:case-out .22s ease-in both}
+ ::view-transition-new(root){animation:case-in .38s cubic-bezier(.22,1,.36,1) both}
+ @keyframes case-out{to{opacity:0;transform:translateY(-5px)}}
+ @keyframes case-in{from{opacity:0;transform:translateY(9px)}}
+ @supports not (view-transition-name: none){.case-page main{animation:case-in .4s ease-out both}}
+ .case-page footer a,.case-page nav a{transition:transform .22s ease}
+ .case-page footer a:hover,.case-page nav a:hover{transform:translateY(-2px)}
+}
