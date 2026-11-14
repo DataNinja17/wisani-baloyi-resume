@@ -1,0 +1,1 @@
+Verify your sending domain in Resend. Set RESEND_API_KEY and CONTACT_FROM_EMAIL in Netlify's Functions environment, then deploy this folder using its netlify.toml build configuration. Form submissions go to wisanibaloyi65@gmail.com with the visitor's address as Reply-To. The phone link opens a prefilled WhatsApp chat.

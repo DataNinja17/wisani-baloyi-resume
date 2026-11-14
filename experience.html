@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Professional experience | Wisani Baloyi</title>
+<link rel="icon" href="/logo.png"><link rel="stylesheet" href="/static/css/main.672ffe21.css"><link rel="stylesheet" href="/careers.css">
+</head><body class="career-page"><main class="career-main">
+<a href="/#skills" class="career-back">← Back to portfolio</a>
+<h1>Professional experience</h1>
+<details class="career-entry" id="matz-analytics" name="work-history">
+  <summary><span class="career-date">Aug 2026 – Nov 2026</span><span class="career-title">Data Automation Analyst (Remote Consultant)</span><span class="career-company">Matz Analytics LLC</span></summary>
+  <div class="career-detail"><ul><li>Improved client automations in Zapier and maintained lead and reporting pipelines for marketing agencies and law firms.</li><li>Managed the pipeline from ad-platform and call-tracking events through Zapier cleaning and checks, Google Sheets verification, weekly BigQuery loads, and Looker Studio ROI dashboards.</li><li>Cleaned and validated client data, managed databases, and kept client data secure.</li><li>Wrote a Python lead-cleaning function that passed all 62 synthetic test cases. Designed an additive scoring model to classify leads as hot, warm, or cold.</li><li>Reconciled dashboard figures against source data and reference reports. Documented the pipeline with flowcharts.</li></ul></div>
+</details>
+<details class="career-entry" id="phakamani-power-platform" name="work-history">
+  <summary><span class="career-date">Feb 2024 – Aug 2026</span><span class="career-title">Power Platform Developer</span><span class="career-company">Phakamani Impact Capital Group of Companies</span></summary>
+  <div class="career-detail"><p>Group companies included Phakamani Impact Capital, ExecuTrain SA, and Maccauvlei Learning Academy.</p><ul><li>Built Power Apps and Power Automate solutions on Dataverse and SharePoint. Managed solutions across environments through application lifecycle management (ALM) and configured security roles and access.</li><li>Built a group-wide ticketing system, a youth programme platform, and applications for training and leave.</li><li>Delivered Power Pages portals for Harmony Gold and Sibanye-Stillwater programmes.</li><li>Built Copilot Studio agents connected to SharePoint and Teams.</li><li>Supported around 50 users across three companies with access, security groups, training, and documentation. Ran phased testing from beta through full release and fixed issues raised by users.</li><li>Customised Dynamics 365 CRM, automating customer journeys, lead management, and marketing form design and analysis.</li></ul></div>
+</details>
+<details class="career-entry" id="phakamani-power-bi" name="work-history">
+  <summary><span class="career-date">Jun 2023 – Feb 2024</span><span class="career-title">Power BI Developer</span><span class="career-company">Phakamani Impact Capital</span></summary>
+  <div class="career-detail"><ul><li>Developed and maintained weekly and monthly Power BI reports and dashboards for internal stakeholders and external clients.</li><li>Built data models with Power Query (M), wrote DAX measures, defined KPIs, automated reporting, and standardised datasets.</li><li>Reduced report development and delivery turnaround time by 95%.</li><li>Created and maintained production documentation for all reporting assets.</li></ul></div>
+</details>
+<details class="career-entry" id="matase-industrial" name="work-history">
+  <summary><span class="career-date">May 2022 – Jun 2023</span><span class="career-title">Junior Data Analyst</span><span class="career-company">Matase Industrial Solutions</span></summary>
+  <div class="career-detail"><ul><li>Automated monthly reporting in Power BI, improving reporting efficiency by over 30%.</li><li>Collected and analysed fleet data, summarised trends, and recommended actions to management.</li><li>Maintained the fleet database for accuracy and handled ad hoc internal reporting requests.</li><li>Built tables, graphs, and PowerPoint presentations for business stakeholders. Created digital content and managed the company’s brand identity across visual materials.</li></ul></div>
+</details>
+<details class="career-entry" id="independent" name="work-history">
+  <summary><span class="career-date">Sep 2020 – May 2022</span><span class="career-title">Self-directed upskilling and job search</span><span class="career-company">Independent</span></summary>
+  <div class="career-detail"><p>Independent period dedicated to self-directed learning and seeking a new position.</p></div>
+</details>
+<details class="career-entry" id="social-places" name="work-history">
+  <summary><span class="career-date">May 2020 – Sep 2020</span><span class="career-title">Junior Data Scientist</span><span class="career-company">Social Places</span></summary>
+  <div class="career-detail"><ul><li>Developed and maintained a natural language processing pipeline using spaCy and Prodigy for text labelling and analysis.</li><li>Contributed to an NLP solution that boosted sales and customer engagement for one of South Africa’s largest restaurant chains.</li></ul></div>
+</details>
+<details class="career-entry" id="explore-data-science" name="work-history">
+  <summary><span class="career-date">Jan 2019 – Dec 2019</span><span class="career-title">Data Science Intern</span><span class="career-company">Explore Data Science Academy</span></summary>
+  <div class="career-detail"><ul><li>Built predictive models on client projects using regression, classification, and unsupervised learning. Presented findings and recommendations to stakeholders.</li></ul></div>
+</details>
+</main><script>
+function revealPosition() {
+  const requested = window.location.hash.slice(1);
+  const selected = document.getElementById(requested) || document.querySelector('.career-entry');
+  selected.open = true;
+  if (requested) {
+    selected.querySelector('summary').focus({preventScroll: true});
+    selected.scrollIntoView({block: 'start', behavior: 'instant'});
+  }
+}
+window.addEventListener('hashchange', revealPosition);
+revealPosition();
+</script></body></html>
