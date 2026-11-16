@@ -52,3 +52,12 @@
 .app__navbar-menu .drawer{visibility:hidden;pointer-events:none;transform:translateX(101%);opacity:.5;transition:transform .34s cubic-bezier(.22,1,.36,1),opacity .26s ease,visibility 0s .34s}
 .app__navbar-menu .drawer.open{visibility:visible;pointer-events:auto;transform:translateX(0);opacity:1;transition-delay:0s}
 @media(prefers-reduced-motion:reduce){.app__navbar-menu .drawer{transition:none}}
+.quote-stack.app__testimonial-item {display:grid;align-items:stretch;justify-items:stretch;overflow:hidden}
+.quote-slide {grid-area:1 / 1;flex-direction:inherit;min-width:0;opacity:1;transform:none;transition:opacity .28s ease,transform .32s cubic-bezier(.22,1,.36,1)}
+.quote-slide[aria-hidden="true"] {opacity:0;pointer-events:none;transform:translateX(calc(-1 * var(--quote-shift)))}
+.quote-slide img {flex-shrink:0}
+.app__testimonial-btns button {width:50px;height:50px;margin:1rem;border:0;border-radius:50%;background:var(--white-color);color:var(--secondary-color);cursor:pointer;transition:background-color .2s,color .2s}
+.app__testimonial-btns button svg {width:20px;height:20px}
+.app__testimonial-btns button:hover {background:var(--secondary-color);color:var(--white-color)}
+@media(min-width:2000px){.app__testimonial-btns button{width:100px;height:100px}.app__testimonial-btns button svg{width:45px;height:45px}}
+@media(prefers-reduced-motion:reduce){.quote-slide,.quote-slide[aria-hidden="true"]{transition:none;transform:none}}
